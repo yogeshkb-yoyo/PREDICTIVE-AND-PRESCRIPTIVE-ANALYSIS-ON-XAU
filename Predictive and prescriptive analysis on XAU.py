@@ -144,7 +144,7 @@ calculate_risk_metrics(gold_data, split_date, symbol)
 gold_prices = fetch_prices(TICKER, start_date, end_date)
 X, y, _ = preprocess_and_create_sequences(gold_prices, SEQ_LENGTH)
 
-genai.configure(api_key="AIzaSyDAFQQ_wDzUuU0yIlZ2Rc3vzupkKjllrbg")
+genai.configure(api_key="_API_")
 
 
 model = genai.GenerativeModel('gemini-pro')
